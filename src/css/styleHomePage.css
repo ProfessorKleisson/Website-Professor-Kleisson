@@ -10,7 +10,7 @@
   --secondary-light-2: rgb(127, 183, 126, 0.1);
   --beige: #FFE699;
   --black: #393e46;
-  --background-color: linear-gradient(90deg, #031634 0%, #092758 100%);
+  --background-color: linear-gradient(90deg, #031634 0%, #092758 100%);
   --shadow: 0px 2px 8px 0px var(#6f93ff);
 }
 
@@ -46,7 +46,7 @@
 }
 
 .navbar-list {
-  width: 100%;
+  width: 100vw;
   text-align: right;
   padding-right: 2rem;
 }
@@ -180,7 +180,6 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Inter', sans-serif;
 }
 
 header {
@@ -190,9 +189,10 @@ header {
 
 body {
   margin: 0;
+  padding: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, #031634 0%, #092758 100%);
+  background: linear-gradient(90deg, #031634 0%, #092758, 100%);
   font-family: 'Roboto', sans-serif;
 }
 
@@ -230,20 +230,13 @@ select {
   cursor: pointer;
 }
 
-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 36px;
-}
-
 /*Estilo da forma*/
 form {
   min-width: 350px;
   height: auto;
   padding: 36px;
   border-radius: 10px;
-  background: linear-gradient(90deg, #031634 0%, #092758 100%);
+  background: linear-gradient(90deg, #031634 0%, #092758, 100%);
   box-shadow: 0px 10px 30px #6f93ff;
 }
 
@@ -330,12 +323,14 @@ button:hover {
   background-color: #201b2c;
 }
 
-.span :-moz-loading{
-  color:var(--beige);
+.span :-moz-loading {
+  color: var(--beige);
 }
-.span
 
-.img capa {
-    width: 100%;
-    height: auto;
+section {
+  width: 100%;
+}
+
+.capa {
+  width: 100%;
 }
