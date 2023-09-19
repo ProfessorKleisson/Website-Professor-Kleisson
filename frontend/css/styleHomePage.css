@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+
+:root {
+  --primary: #2f2841;
+  --secondary: #6f93ff;
+  --green: #82cd47;
+  --secondary-light: rgb(34, 124, 112, 0.2);
+  --secondary-light-2: rgb(127, 183, 126, 0.1);
+  --beige: #FFE699;
+  --black: #393e46;
+  --background-color: linear-gradient(90deg, #031634 0%, #092758 100%);
+  --shadow: 0px 2px 8px 0px var(#6f93ff);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: auto;
+  height: 90px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  background-color: var(--primary);
+  padding: 0 8%;
+  box-shadow: var(--shadow);
+}
+
+.navbar-logo {
+  cursor: pointer;
+}
+
+.navbar-list {
+  width: 100%;
+  text-align: right;
+  padding-right: 2rem;
+}
+
+.navbar-list li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+.navbar-list li a {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--beige);
+  text-decoration: none;
+}
+
+
+
+.profile-dropdown {
+  position: relative;
+  width: fit-content;
+}
+
+.profile-dropdown-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  width: 150px;
+  border-radius: 50px;
+  color: var(--beige);
+  background-color: var(--secondary);
+  box-shadow: var(--shadow);
+
+  cursor: pointer;
+  border: 1px solid var(--secondary);
+  transition: box-shadow 0.2s ease-in, background-color 0.2s ease-in,
+    border 0.3s;
+}
+
+.profile-dropdown-btn:hover {
+  background-color: var(--secondary-light-2);
+  box-shadow: var(--shadow);
+}
+
+.profile-img {
+  position: relative;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: url(../../assets/profile-pic.png);
+  background-size: cover;
+}
+
+.profile-img i {
+  position: absolute;
+  right: 0;
+  bottom: 0.3rem;
+  font-size: 0.5rem;
+  color: var(--green);
+}
+
+.profile-dropdown-btn span {
+  margin: 0 0.5rem;
+  margin-right: 0;
+}
+
+.profile-dropdown-list {
+  position: absolute;
+  top: 68px;
+  width: 220px;
+  right: 0;
+  background-color: var(--secondary);
+  border-radius: 10px;
+  max-height: 0;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: max-height 0.5s;
+}
+
+.profile-dropdown-list hr {
+  border: 0.5px solid var(--green);
+}
+
+.profile-dropdown-list.active {
+  max-height: 500px;
+}
+
+.profile-dropdown-list-item {
+  padding: 0.5rem 0rem 0.5rem 1rem;
+  transition: background-color 0.2s ease-in, padding-left 0.2s;
+}
+
+.profile-dropdown-list-item a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--black);
+}
+
+.profile-dropdown-list-item a i {
+  margin-right: 0.8rem;
+  font-size: 1.1rem;
+  width: 2.3rem;
+  height: 2.3rem;
+  background-color: var(--primary);
+  color: var(--white);
+  line-height: 2.3rem;
+  text-align: center;
+  margin-right: 1rem;
+  border-radius: 50%;
+  transition: margin-right 0.3s;
+}
+
+.profile-dropdown-list-item:hover {
+  padding-left: 1.5rem;
+  background-color: var(--secondary-light);
+}
+
+@media only screen and (max-width: 730px) {
+  .nav.bar {
+    padding: 1.5rem 4rem;
+  }
+
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+header {
+  background: #24252a;
+  box-shadow: 0px 3px 10px #6f93ff;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #031634 0%, #092758 100%);
+  font-family: 'Roboto', sans-serif;
+}
+
+input,
+textarea {
+  font-size: 14px;
+}
+
+/* Estilo para os rótulos */
+label {
+  font-weight: bold;
+  margin-bottom: 4px;
+  margin-top: 10px;
+  font-size: 20px;
+  color: var(--beige);
+}
+
+option {
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+/*Estilo da lista suspensa*/
+select {
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  height: 30px;
+  text-align: center;
+  background-color: #514869;
+  border-radius: 4px;
+  color: var(--beige);
+  margin-right: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 36px;
+}
+
+/*Estilo da forma*/
+form {
+  min-width: 350px;
+  height: auto;
+  padding: 36px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #031634 0%, #092758 100%);
+  box-shadow: 0px 10px 30px #6f93ff;
+}
+
+/*Estilo da página*/
+input {
+  background: #514869;
+  color: var(--beige);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 30px;
+  padding: 4px 8px;
+  font-size: 16px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.input-group {
+  margin-right: 10px;
+  padding: 5px;
+  flex-direction: column;
+  font-size: 16px;
+  align-items: center;
+  width: 100%;
+}
+
+.input-group>div {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Estilo da citação e dos comentários*/
+textarea {
+  display: flex;
+  border: none;
+  border-radius: 4px;
+  height: 80px;
+  padding: 4px 0px;
+  align-items: center;
+  width: 100%;
+  background: #514869;
+  color: #f0ffffde;
+  font-size: 12pt;
+  box-shadow: 0px 10px 40px #00000056;
+}
+
+
+/*Estilo dos botões*/
+button {
+  width: 15%;
+  cursor: pointer;
+  height: 30px;
+  border: none;
+  border-radius: 4px;
+  color: #000000;
+  font-size: 12px;
+  background-color: #6f93ff;
+  align-self: center;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #201b2c;
+  align-self: center;
+}
+
+.confirm-button {
+  width: 100%;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  color: #000000;
+  font-size: 20px;
+  background-color: #6f93ff;
+  box-shadow: 0px 10px 30px -12px #6f93ff;
+}
+
+.confirm-button:hover {
+  background-color: #201b2c;
+}
+
+.span :-moz-loading{
+  color:var(--beige);
+}
+.span
+
+.img capa {
+    width: 100%;
+    height: auto;
+}

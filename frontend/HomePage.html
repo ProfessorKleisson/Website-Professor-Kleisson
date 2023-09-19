@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    
+  <link rel="stylesheet" href="../../CSS/HomePage/styleHomePage.css">
+  <title>Cite.me</title>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <h1> <img src="../../assets/logo.png" class="navbar-logo" alt="logo" /></h1>
+    </div>
+    <ul class="navbar-list">
+      <li><a href="../HomePage/HomePage.html">Homepage</a></li>
+      <li><a href="#">Cursos</a></li>
+      <li><a href="#">YouTube</a></li>
+      <li><a href="#">Minhas Obras</a></li>
+      <li><a href="#">Projetos</a></li>
+      <li><a href="#">Sobre</a></li>
+    </ul>
+
+    <div class="profile-dropdown">
+      <div onclick="toggle()" class="profile-dropdown-btn">
+        <div class="profile-img">
+          <i class="fa-solid fa-circle"></i>
+        </div>
+
+        <span
+          >Kleisson
+          <i class="fa-solid fa-angle-down"></i>
+        </span>
+      </div>
+
+      <ul class="profile-dropdown-list">
+        <li class="profile-dropdown-list-item">
+          <a href="#">
+            <i class="fa-regular fa-user"></i>
+            Editar Perfil
+          </a>
+        </li>
+
+        <li class="profile-dropdown-list-item">
+          <a href="#">
+            <i class="fa-regular fa-envelope"></i>
+            SAC
+          </a>
+        </li>
+
+        <li class="profile-dropdown-list-item">
+          <a href="#">
+            <i class="fa-solid fa-chart-line"></i>
+            Análise
+          </a>
+        </li>
+
+        <li class="profile-dropdown-list-item">
+          <a href="#">
+            <i class="fa-solid fa-sliders"></i>
+            Configurações
+          </a>
+        </li>
+
+        <li class="profile-dropdown-list-item">
+          <a href="#">
+            <i class="fa-regular fa-circle-question"></i>
+            Ajuda & Suporte
+          </a>
+        </li>
+        <hr />
+
+        <li class="profile-dropdown-list-item">
+          <a href="../login/login.html">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            Sair
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<img src="../assets/tela-inicial-site-citeme.png" class="capa" alt="capa" />
+
+
+  <script src="../../../cite.me-backend/quote/main.js"></script>
+  
+</body>
+
+</html>
