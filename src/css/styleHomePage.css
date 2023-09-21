@@ -148,7 +148,7 @@
   text-decoration: none;
   font-size: 0.9rem;
   font-weight: 500;
-  color: var(--black);
+  color: var(--beige);
 }
 
 .profile-dropdown-list-item a i {
@@ -333,4 +333,26 @@ section {
 
 .capa {
   width: 100%;
+}
+
+
+
+
+/* Galeria de Fotos */
+.gallery{
+  column-count: 3;
+  column-gap: 0;
+}
+
+.gallery img{
+  width: 100%;
+  aspect-ratio: 1/2;
+  object-fit: cover;
+
+  transition: scale 150ms ease, opacity 150ms linear;
+}
+
+.gallery:has(img:hover) img:not(:hover) {
+  scale: .9;
+  opacity: .7;
 }

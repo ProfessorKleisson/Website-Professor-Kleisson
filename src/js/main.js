@@ -77,3 +77,4 @@ function adicionarOpcaoTagEspecífica() {
         select.appendChild(option);
     }
 }
+
