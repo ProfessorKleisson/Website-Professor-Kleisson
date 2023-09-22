@@ -339,6 +339,10 @@ section {
 
 
 /* Galeria de Fotos */
+
+body{
+  background-color: var(--primary);
+}
 .gallery{
   column-count: 3;
   column-gap: 0;
@@ -356,3 +360,8 @@ section {
   scale: .9;
   opacity: .7;
 }
+.gallery h2{
+  color:var(--beige);
+  text-align: center;
+}
+
