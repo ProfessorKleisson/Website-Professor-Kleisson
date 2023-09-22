@@ -447,7 +447,6 @@ p {
   margin-bottom:-7px; 
   min-height:100px;
   max-height:150px;
-  color: #82cd47;
 }
 
 .content {
@@ -497,4 +496,9 @@ p {
   h1 {
     font-size:24px;
   }
+}
+
+
+.capaSobre{
+  align-content: center;
 }
