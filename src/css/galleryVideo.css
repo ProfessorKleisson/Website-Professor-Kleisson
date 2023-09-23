@@ -1,0 +1,24 @@
+/* Galeria de Thumbnails e vídeos da página YouTube */
+.galleryYouTube {
+  column-count: 3;
+  column-gap: 1;
+  background: linear-gradient(180deg, #17356A 0%, #0A1C44 50%, #061437 100%);
+}
+
+.galleryYouTube iframe {
+  width: 100%;
+  aspect-ratio: 2/1;
+  object-fit: cover;
+
+  transition: scale 150ms ease, opacity 150ms linear;
+}
+
+.galleryYouTube:has(img:hover) img:not(:hover) {
+  scale: .9;
+  opacity: .7;
+}
+
+.galleryYouTube h2 {
+  color: var(--beige);
+  text-align: center;
+}

@@ -1,0 +1,26 @@
+/* Galeria de Fotos */
+.gallery {
+    column-count: 4;
+    column-gap: 0;
+    background: linear-gradient(180deg, #17356A 0%, #0A1C44 50%, #061437 100%);
+}
+
+.gallery img {
+    width: 100%;
+    aspect-ratio: 1/2;
+    object-fit: cover;
+    padding: 10px;
+    border-radius: 25px;
+
+    transition: scale 150ms ease, opacity 150ms linear;
+}
+
+.gallery:has(img:hover) img:not(:hover) {
+    scale: .9;
+    opacity: .7;
+}
+
+.gallery h2 {
+    color: var(--beige);
+    text-align: center;
+}
